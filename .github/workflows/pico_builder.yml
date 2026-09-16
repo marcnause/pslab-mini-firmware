@@ -33,7 +33,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          cmake .. -DPICO_BOARD=pico2 -DPICO_SDK_PATH=$PICO_SDK_PATH
+          cmake .. -DPICO_BOARD=pico -DPICO_SDK_PATH=$PICO_SDK_PATH
           make -j4
 
       - name: Upload .uf2 Artifact
